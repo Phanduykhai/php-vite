@@ -1,9 +1,9 @@
 <?php
 return [
-    'Login' => 'đăng nhập',
-    'Register' => 'Đăng ký',
-    'Email Address' => 'Địa chỉ email',
-    'Password' => 'Mật khẩu',
-    'Name' => 'Tên',
-    
+    'đăng nhập' => 'Login',
+    'Đăng ký' => 'Register',
+    'Địa chỉ email' => 'Email Address',
+    'Mật khẩu' => 'Password',
+    'Tên' => 'Name',
+    'Xác nhận mật khẩu' => 'Confirm Password',
 ];

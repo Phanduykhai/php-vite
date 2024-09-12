@@ -42,11 +42,11 @@
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
-                                <li><a href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                                <li><a href="{{ route('login') }}">{{ __('messages.Login') }}</a></li>
                             @endif
 
                             @if (Route::has('register'))
-                                <li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                                <li><a href="{{ route('register') }}">{{ __('messages.Register') }}</a></li>
                             @endif
                         @else
                             <li class="dropdown">
@@ -59,7 +59,7 @@
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
+                                            {{ __('messages.Logout') }}
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
