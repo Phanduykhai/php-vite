@@ -19,10 +19,10 @@
                         </div>
                         <div class="form-group">
                             <label for="email">{{ __('Email') }}</label>
-                            <input type="email" class="form-control" id="email" value="{{ auth()->user()->email }}" readonly>
+                                <input type="email" class="form-control" id="email" value="{{ auth()->user()->email }}" readonly>
                         </div>
                     </div>
-                    <p>--------------------------------------------------------------------------------------------------------------------------------------</p>
+                    <p>+-------------------------------------------------------------------------------------------------------------------------------------</p>
                     <b>Thư Mục: </b>
                     <!-- Add more fields as needed -->
                     <a href="categories" target="_blank" rel="noopener noreferrer">Categories</a>

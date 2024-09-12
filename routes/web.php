@@ -24,3 +24,13 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/categories', [CategoryController::class, 'index']);
+Route::get('update-post/{id}','PostController@edit')->name('post.edit');
+Route::put('update-post/{id}','PostController@update')->name('post.update');
+
+Route::put("post/{post}", function (){
+
+})->middleware("can:update,post");
+
+Route::get("post", function (){
+
+})->middleware("can:create,App\Post");
