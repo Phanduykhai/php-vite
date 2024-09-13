@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\CategoryController;
+// use App\Mail as Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +35,10 @@ Route::put("post/{post}", function (){
 Route::get("post", function (){
 
 })->middleware("can:create,App\Post");
+Route::get("send-mail", function (){
+   $name = "phan duy khai";
+   $message = "xin chao bon mat lon";
+   $email = "duykhaikcr692005@gmail.com";
+   $ojectMail
+   Mail::to($email)->send(new \App\Mail\ContactMail($name, $message));
+});
